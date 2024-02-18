@@ -2,14 +2,18 @@
   "name": "practiceapi-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cluster.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon cluster.js",
+    "start": "node cluster.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
     "express": "^4.18.2"
   },
   "devDependencies": {
@@ -18,6 +22,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.3",
     "prisma": "^5.9.1"
   }
 }
